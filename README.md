@@ -1,4 +1,8 @@
+--------------------------------------------------------------------
+
 # compiler-crashes
+
+--------------------------------------------------------------------
 
 This repo contains some C and C++ programs that make GCC and Clang
 crash. It is intended to support research into software engineering
@@ -13,7 +17,17 @@ binary compilers that we have prepared:
   http://embed.cs.utah.edu/compiler-install.tar.bz2
 
 These binaries are unlikely to work on anything other than Ubuntu
-14.04 for x86-64.
+14.04 for x86-64. Since both LLVM and GCC use Subversion, old
+compilers are identified using their SVN revision number. Compilers
+were built using this script, which takes a revision number as an
+argument:
+
+  https://github.com/csmith-project/csmith/blob/master/driver/build_compiler
+
+Building older compiler versions is far from painless and a number of
+small hacks had to be applied to get various versions to build. See
+the notes at the bottom of this file. These notes are probably
+incomplete.
 
 The 60 compiler crashes were selected from a much larger number of
 crashes using the following criteria:
@@ -42,8 +56,45 @@ are three optional environment variables:
   the specified number of seconds
 - TEST_FILE_LIMIT : if set, kill the compiler if it emits more than
   the specified number of bytes of output
-- TEST_RAM_LIMIT: if set, kill the compiler if it uses more than the
+- TEST_RAM_LIMIT : if set, kill the compiler if it uses more than the
   specified number of bytes of RAM
 
-Everything should work if these values are respectively set to 60,
-1000000, and 6000000000.
+Everything should work if these values are respectively set to 60 (1
+minute), 1000000 (1 MB), and 6000000000 (6 GB).
+
+Turn off ASLR before trying to reproduce crashes.
+
+--------------------------------------------------------------------
+
+to get old GCC versions to build:
+
+changed line 62 of /usr/include/x86_64-linux-gnu/bits/siginfo.h to:
+
+  typedef struct siginfo
+
+added:
+
+  --disable-multilib --disable-bootstrap
+
+to configure options
+
+export CXX='g++-4.4 -w -fpermissive'
+export CC='gcc-4.4 -w'
+export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+
+--------------------------------------------------------------------
+
+to get old LLVM versions to build:
+
+export CXX='g++-4.4 -w -fpermissive'
+export CC='gcc-4.4 -w'
+
+add these to cassert header file:
+
+  #include <stddef.h>
+  #include <unistd.h>
+
+starting around revision 160000, swich from GCC 4.4 to 4.8
+
+--------------------------------------------------------------------
