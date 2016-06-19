@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaDecl.cpp:584: virtual void clang::Sema::ActOnPopScope(clang::SourceLocation, clang::Scope*): Assertion `(S->getFlags() & (Scope::DeclScope | Scope::TemplateParamScope)) && "Scope shouldn't contain decls!"' failed.
+

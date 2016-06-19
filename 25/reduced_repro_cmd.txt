@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r193380-install/bin/gcc -O3 small.c 

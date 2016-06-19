@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r116627-install/bin/g++ -o /dev/null -ftemplate-depth-128 -fstack-protector -O3 -Wno-inline -Wall -pthread -fvisibility=hidden -Winvalid-pch  -c small.cpp >/dev/null 2>&1

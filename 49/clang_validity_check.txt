@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r117883-install/bin/clang -o /dev/null --param=ssp-buffer-size=4 --param -mtune=native  -c small.c >/dev/null 2>&1

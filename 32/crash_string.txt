@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/include/llvm/CodeGen/MachineOperand.h:374: void llvm::MachineOperand::setIsKill(bool): Assertion `(!Val || !isDebug()) && "Marking a debug operation as kill"' failed.
+

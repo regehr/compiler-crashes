@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r107675-install/bin/clang++ -o /dev/null -ftemplate-depth-128 -O2 -fstack-protector -O3 -Wno-inline -fvisibility=hidden -Winvalid-pch -O3  -c small.cpp >/dev/null 2>&1

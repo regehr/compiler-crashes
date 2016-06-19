@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r232274-install/bin/clang++ -o /dev/null -g -O2 -Wformat -Werror=format-security -O2 -fvisibility=hidden -std=c++0x -fno-exceptions  -c small.cpp >/dev/null 2>&1

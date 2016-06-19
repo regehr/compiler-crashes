@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaOverload.cpp:5490: clang::ASTOwningResult<&clang::ActionBase::DeleteExpr> clang::Sema::CreateOverloadedUnaryOp(clang::SourceLocation, unsigned int, const clang::UnresolvedSetImpl&, clang::ASTOwningResult<&clang::ActionBase::DeleteExpr>): Assertion `Op != OO_None && "Invalid opcode for overloaded unary operator"' failed.
+

@@ -1,0 +1,1 @@
+g++ -o /dev/null -fshow-column -Wredundant-decls -Wcast-qual -Wcast-align -Wundef -Wstrict-null-sentinel -Wstrict-overflow=1 -Wlogical-op -Wdouble-promotion -fvisibility=hidden -g -O2 -fstack-protector -Wformat -Werror=format-security  -c small.cpp >/dev/null 2>&1

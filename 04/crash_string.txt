@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaDeclCXX.cpp:4550: bool clang::Sema::CheckReferenceInit(clang::Expr*&, clang::QualType, clang::SourceLocation, bool, bool, bool, clang::ImplicitConversionSequence*, bool): Assertion `ICS->UserDefined.After.ReferenceBinding && ICS->UserDefined.After.DirectBinding && "Expected a direct reference binding!"' failed.
+

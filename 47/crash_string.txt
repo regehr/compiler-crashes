@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CGRTTI.cpp:382: void<unnamed>::RTTIBuilder::BuildVTablePointer(const clang::Type*): Assertion `0 && "Unhandled type!"' failed.
+

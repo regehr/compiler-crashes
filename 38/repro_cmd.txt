@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r110244-install/bin/clang++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -fPIC -O3 -mtune=native small.cpp 

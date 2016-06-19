@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/include/llvm/Support/Casting.h:194: typename llvm::cast_retty<To, From>::ret_type llvm::cast(const Y&) [with X = clang::ValueDecl, Y = clang::Decl*]: Assertion `isa<X>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+

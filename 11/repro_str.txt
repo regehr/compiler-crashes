@@ -1,0 +1,1 @@
+Assertion `isa<llvm::OpaqueType>(OpaqueHolder.get()) && "Updating compilation of an already non-opaque type?"' failed.

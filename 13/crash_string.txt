@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CGVtable.cpp:881: void<unnamed>::VCallAndVBaseOffsetBuilder::AddVCallAndVBaseOffsets(clang::CodeGen::BaseSubobject, bool, uint64_t): Assertion `Layout.getVBaseClassOffset(PrimaryBase) == 0 && "Primary vbase should have a zero offset!"' failed.
+

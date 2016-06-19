@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Parse/ParseExprCXX.cpp:227: bool clang::Parser::ParseOptionalCXXScopeSpecifier(clang::CXXScopeSpec&, clang::ParsedType, bool, bool*): Assertion `false && "FIXME: Only type template names supported here"' failed.
+

@@ -1,0 +1,2 @@
+./boost/log/utility/setup/settings.hpp:587:5: internal compiler error: canonical types differ for identical types boost::rv<boost::log::v2_mt_posix::basic_settings<char> >& and boost::rv<boost::log::v2_mt_posix::basic_settings<char> >&
+

@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaTemplateDeduction.cpp:103: clang::Sema::TemplateDeductionResult DeduceNonTypeTemplateArgument(clang::Sema&, clang::NonTypeTemplateParmDecl*, llvm::APSInt, clang::QualType, bool, clang::Sema::TemplateDeductionInfo&, llvm::SmallVectorImpl<clang::DeducedTemplateArgument>&): Assertion `NTTP->getDepth() == 0 && "Cannot deduce non-type template argument with depth > 0"' failed.
+

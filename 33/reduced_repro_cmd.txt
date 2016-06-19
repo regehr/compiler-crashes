@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r208767-install/bin/clang++ -g -std=c++0x small.cpp 

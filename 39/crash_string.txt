@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CGExpr.cpp:579: clang::CodeGen::RValue clang::CodeGen::CodeGenFunction::EmitLoadOfLValue(clang::CodeGen::LValue, clang::QualType): Assertion `ExprType->isFunctionType() && "Unknown scalar value"' failed.
+

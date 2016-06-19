@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r148834-install/bin/g++ -o /dev/null -g -Wextra -std=c++0x -pthread -O2  -c small.cpp >/dev/null 2>&1

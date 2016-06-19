@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r218173-install/bin/clang++ -DHIPLASBIZZ -mx32 -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -DNDEBUG conftest.cc 

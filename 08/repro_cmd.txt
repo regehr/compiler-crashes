@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r227783-install/bin/clang++ -mx32 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC small.cpp 

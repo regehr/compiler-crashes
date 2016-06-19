@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r224523-install/bin/g++ small.cpp 

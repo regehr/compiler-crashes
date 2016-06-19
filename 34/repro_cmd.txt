@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r122396-install/bin/clang++ -g -Werror -Wall -Wextra -Wno-unused-parameter -std=c++0x -pthread -pthread -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -O3 -mtune=native small.cpp 

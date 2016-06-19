@@ -1,0 +1,1 @@
+Assertion `(NumParams == FTy->getNumParams() || (FTy->isVarArg() && NumParams > FTy->getNumParams())) && "Calling a function with bad signature!"' failed.

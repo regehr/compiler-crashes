@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r226361-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g -Wformat -Werror=format-security -O3 -O3  -c small.cpp >/dev/null 2>&1

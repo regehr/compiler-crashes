@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/lib/VMCore/Instructions.cpp:307: void llvm::CallInst::init(llvm::Value*, llvm::Value* const*, unsigned int): Assertion `(NumParams == FTy->getNumParams() || (FTy->isVarArg() && NumParams > FTy->getNumParams())) && "Calling a function with bad signature!"' failed.
+

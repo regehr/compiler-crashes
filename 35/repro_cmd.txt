@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r192721-install/bin/gcc -mx32 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security --param max-inline-insns-single=1200 -fPIC small.c 

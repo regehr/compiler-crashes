@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r172490-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g --param=ssp-buffer-size=4 -Wformat -O3 -Wno-inline -g -pthread -fPIC -fno-strict-aliasing  -c small.cpp >/dev/null 2>&1

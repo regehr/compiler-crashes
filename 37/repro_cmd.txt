@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r212038-install/bin/clang++ -Winline -msse -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -pthread -O2 -fvisibility=hidden -fvisibility-inlines-hidden -Wall -W -fPIC small.cpp 

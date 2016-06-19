@@ -1,0 +1,1 @@
+/var/cache/apt-build/build/qtdeclarative-opensource-src-5.2.1/tests/auto/qml/qqmlmoduleplugin

@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r154158-install/bin/g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wno-c++0x-compat -O2 -fvisibility=hidden -fvisibility-inlines-hidden -std=c++0x -fno-exceptions -Wall -W -Wno-c++0x-compat -fPIC small.cpp 

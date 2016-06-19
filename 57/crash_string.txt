@@ -1,0 +1,2 @@
+../../src/hb-private.hh:648: internal compiler error: in expand_or_defer_fn, at cp/semantics.c:3220
+

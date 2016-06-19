@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/AST/RecordLayoutBuilder.cpp:1461: const clang::ASTRecordLayout& clang::ASTContext::getASTRecordLayout(const clang::RecordDecl*): Assertion `D && "Cannot get layout of forward declarations!"' failed.
+

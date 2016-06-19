@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r162993-install/bin/g++ -O1 small.cpp 

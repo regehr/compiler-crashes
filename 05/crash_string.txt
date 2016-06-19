@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaTemplateInstantiate.cpp:962: clang::TypeSourceInfo* clang::Sema::SubstType(clang::TypeSourceInfo*, const clang::MultiLevelTemplateArgumentList&, clang::SourceLocation, clang::DeclarationName): Assertion `!ActiveTemplateInstantiations.empty() && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
+

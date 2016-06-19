@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaDecl.cpp:4481: clang::OpaquePtr<0> clang::Sema::ActOnFinishFunctionBody(clang::OpaquePtr<0>, clang::ASTOwningResult<&clang::ActionBase::DeleteStmt>, bool): Assertion `ExprTemporaries.empty() && "Leftover temporaries in function"' failed.
+

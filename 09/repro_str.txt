@@ -1,0 +1,1 @@
+internal compiler error: tree check: expected class ‘expression’, have ‘exceptional’ (error_mark) in bot_manip, at cp/tree.c:1472

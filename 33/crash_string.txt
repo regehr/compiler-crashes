@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:756: bool isUnsignedDIType(llvm::DwarfDebug *, llvm::DIType): Assertion `DTy.getTag() == dwarf::DW_TAG_enumeration_type' failed.
+

@@ -1,0 +1,1 @@
+/home/regehr/svn/code/harvest_crashes/qtdeclarative-opensource-src-5.2.1/src/qml

@@ -1,0 +1,1 @@
+g++ -o /dev/null -O2 -fstack-protector -Werror=format-security -finline-functions -Wno-inline -pthread -fPIC -fno-strict-aliasing -ftemplate-depth-1024 -O3  -c small.cpp >/dev/null 2>&1

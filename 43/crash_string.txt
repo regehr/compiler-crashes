@@ -1,0 +1,2 @@
+./boost/thread/pthread/thread_heap_alloc.hpp:47: internal compiler error: in gimplify_var_or_parm_decl, at gimplify.c:1594
+

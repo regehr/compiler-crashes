@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r226543-install/bin/clang++ -o /dev/null -Wall -W -Wpointer-arith -Wcast-align -fno-gnu-keywords -Wundef -Wstrict-null-sentinel -Wlogical-op -Wmissing-declarations -Winit-self -fvisibility=hidden -g -O2  -c small.cpp >/dev/null 2>&1

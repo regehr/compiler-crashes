@@ -1,0 +1,1 @@
+Assertion `SrcType->getAs<EnumType>()->getDecl()->isScoped()' failed.

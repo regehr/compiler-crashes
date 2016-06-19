@@ -1,0 +1,1 @@
+/home/regehr/svn/code/harvest_crashes/qt4-x11-4.8.5+git192-g085f851+dfsg/src/3rdparty/webkit/Source/JavaScriptCore

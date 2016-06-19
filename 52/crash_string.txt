@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/../../include/clang/AST/ASTContext.h:575: clang::QualType clang::ASTContext::getTypeDeclType(const clang::TypeDecl*, const clang::TypeDecl*): Assertion `Decl && "Passed null for Decl param"' failed.
+

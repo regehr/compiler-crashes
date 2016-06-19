@@ -1,0 +1,1 @@
+Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.

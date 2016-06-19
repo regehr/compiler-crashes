@@ -1,0 +1,1 @@
+g++ -o /dev/null -g -Werror=format-security -fPIC  -c small.cpp >/dev/null 2>&1

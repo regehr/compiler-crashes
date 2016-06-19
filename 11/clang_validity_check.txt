@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r114139-install/bin/clang++ -o /dev/null -g -O2 -fstack-protector --param=ssp-buffer-size=4 -finline-functions -Wall -g -pthread  -c small.cpp >/dev/null 2>&1

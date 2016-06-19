@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r169071-install/bin/g++ -o /dev/null -O3 -Wuninitialized -frerun-loop-opt -fforce-addr -g -Wall -W -Wextra -fstack-protector --param=ssp-buffer-size=4 -Wformat -mmmx  -c small.cpp >/dev/null 2>&1

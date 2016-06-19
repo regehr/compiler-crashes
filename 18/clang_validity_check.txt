@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r184776-install/bin/clang++ -o /dev/null --param=ssp-buffer-size=4 -finline-functions -Wno-inline -fno-strict-aliasing -ftemplate-depth-1024 -mtune=native  -c small.cpp >/dev/null 2>&1

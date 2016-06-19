@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r192721-install/bin/gcc small.c 

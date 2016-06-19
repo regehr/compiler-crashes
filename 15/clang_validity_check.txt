@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r224696-install/bin/clang++ -o /dev/null -O0 -Wshadow -Wcast-qual -Woverloaded-virtual -g -O2 --param=ssp-buffer-size=4 -Werror=format-security  -c small.cpp >/dev/null 2>&1

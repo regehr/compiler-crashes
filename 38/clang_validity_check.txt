@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r237728-install/bin/clang++ -o /dev/null -O2 -fstack-protector --param=ssp-buffer-size=4 -O3  -c small.cpp >/dev/null 2>&1

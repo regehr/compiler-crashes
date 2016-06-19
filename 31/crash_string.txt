@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/AST/Decl.cpp:1683: void clang::FunctionDecl::setParams(clang::ASTContext&, clang::ParmVarDecl**, unsigned int): Assertion `NumParams == getNumParams() && "Parameter count mismatch!"' failed.
+

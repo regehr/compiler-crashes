@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r228461-install/bin/g++ -o /dev/null -O2 -Wformat -Werror=format-security -W -Wall -pedantic -Wpointer-arith -Wwrite-strings -Wno-long-long --std=c++0x -O3  -c small.cpp >/dev/null 2>&1

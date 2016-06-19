@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r179503-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g -Wformat -Werror=format-security -O3 -Wno-inline -fno-strict-aliasing -ftemplate-depth-1024 -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

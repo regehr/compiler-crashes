@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r202373-install/bin/g++ -o /dev/null -O2 -fstack-protector -Wall -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wreturn-type -Wno-unused-parameter -Wundef -Wmissing-noreturn -Wno-c++0x-compat -pthread -fvisibility=hidden  -c small.cpp >/dev/null 2>&1

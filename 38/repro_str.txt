@@ -1,0 +1,1 @@
+Assertion `D && "Cannot get layout of forward declarations!"' failed.

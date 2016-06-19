@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r224241-install/bin/clang++ -o /dev/null -Winline -msse -g -O2 -Wformat -pthread -pthread -fvisibility-inlines-hidden -Wall  -c small.cpp >/dev/null 2>&1

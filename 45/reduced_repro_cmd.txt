@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r218173-install/bin/clang++ -mx32 -O1 small.cpp 

@@ -1,0 +1,2 @@
+./boost/log/attributes/attribute.hpp:61: internal compiler error: canonical types differ for identical types const boost::rv<boost::log::v2s_mt_posix::attribute> and const boost::rv<boost::log::v2s_mt_posix::attribute>
+

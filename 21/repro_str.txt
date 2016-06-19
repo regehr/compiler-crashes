@@ -1,0 +1,1 @@
+internal compiler error: tree check: accessed elt 4 of tree_vec with 3 elts in tsubst, at cp/pt.c:9668

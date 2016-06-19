@@ -1,0 +1,1 @@
+g++ -o /dev/null -ftemplate-depth-128 -g -fstack-protector --param=ssp-buffer-size=4 -finline-functions -Wno-inline -g -pthread -fno-strict-aliasing -ftemplate-depth-1024 -mtune=native  -c small.cpp >/dev/null 2>&1

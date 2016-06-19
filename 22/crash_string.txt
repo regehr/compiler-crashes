@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/AST/Expr.cpp:1752: ICEDiag CheckICE(const clang::Expr*, clang::ASTContext&): Assertion `!E->isValueDependent() && "Should not see value dependent exprs!"' failed.
+

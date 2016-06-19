@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaTemplateInstantiate.cpp:988: clang::QualType<unnamed>::TemplateInstantiator::TransformTemplateTypeParmType(clang::TypeLocBuilder&, clang::TemplateTypeParmTypeLoc): Assertion `Arg.getKind() == TemplateArgument::Type && "Template argument kind mismatch"' failed.
+

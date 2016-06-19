@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r224523-install/bin/g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O2 -Wall -W -fPIE -O3 -mtune=native small.cpp 

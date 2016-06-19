@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r139303-install/bin/clang++ -o /dev/null -g -Werror=format-security  -c small.cpp >/dev/null 2>&1

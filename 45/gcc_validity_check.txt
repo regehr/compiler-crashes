@@ -1,0 +1,1 @@
+g++ -o /dev/null -mx32 --param=ssp-buffer-size=4 -Wformat  -c small.cpp >/dev/null 2>&1

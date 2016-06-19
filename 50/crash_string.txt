@@ -1,0 +1,2 @@
+./boost/math/special_functions/detail/t_distribution_inv.hpp:409:39: internal compiler error: tree check: expected tree that contains ‘decl minimal’ structure, have ‘tree_list’ in poplevel_named_label_1, at cp/decl.c:477
+

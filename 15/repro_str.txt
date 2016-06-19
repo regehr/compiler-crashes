@@ -1,0 +1,1 @@
+Assertion `!isa<FunctionTemplateDecl>(D) && "Cannot refer unambiguously to a function template"' failed.

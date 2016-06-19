@@ -1,0 +1,2 @@
+/home/regehr/svn/code/harvest_crashes/linux-3.13.0/drivers/gpu/drm/nouveau/core/subdev/fb/nv41.c:69:1: internal compiler error: in expand_expr_real_1, at expr.c:10453
+

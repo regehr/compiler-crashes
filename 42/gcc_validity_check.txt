@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r211028-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -O3 -Wall -ftemplate-depth-1024 -O3  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CGStmt.cpp:221: void clang::CodeGen::CodeGenFunction::EmitBlock(llvm::BasicBlock*, bool): Assertion `I->second == CleanupEntries.size() - 1' failed.
+

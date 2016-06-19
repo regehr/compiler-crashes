@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r234629-install/bin/clang++ -o /dev/null -g -fno-exceptions -W -Wwrite-strings -pedantic -Wno-overlength-strings -O3  -c small.cpp >/dev/null 2>&1

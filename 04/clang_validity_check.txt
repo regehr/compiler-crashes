@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r242575-install/bin/clang++ -o /dev/null -ftemplate-depth-128 -fstack-protector -Wformat -O3 -pthread -fno-strict-aliasing -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

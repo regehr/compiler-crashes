@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r211064-install/bin/clang++ -o /dev/null -ftemplate-depth-128 -Wformat -Werror=format-security -O3 -Wno-inline -g -pthread -fno-strict-aliasing -ftemplate-depth-1024 -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

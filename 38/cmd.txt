@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r110244-install/bin/clang++ -DHIPLASBIZZ -DHAVE_CONFIG_H -I. -I.. -I.. -I../utils -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -c seqencoder.cc -fPIC -DPIC -o .libs/seqencoder.o -O3 -mtune=native 

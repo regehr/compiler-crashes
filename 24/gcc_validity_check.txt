@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r156850-install/bin/g++ -o /dev/null -g -fno-stack-protector -fasynchronous-unwind-tables -Wno-narrowing -Wwrite-strings -Wcast-qual -Wmissing-format-attribute -Wno-overlength-strings -O3  -c small.cpp >/dev/null 2>&1

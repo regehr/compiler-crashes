@@ -1,0 +1,2 @@
+/home/regehr/svn/code/harvest_crashes/opencv-2.4.8+dfsg1/modules/core/include/opencv2/core/operations.hpp:2599:37: internal compiler error: in finish_call_expr, at cp/semantics.c:2162
+

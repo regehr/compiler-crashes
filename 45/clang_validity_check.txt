@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r232274-install/bin/clang++ -o /dev/null -mx32 --param=ssp-buffer-size=4 -Werror=format-security  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/lib/Analysis/LazyValueInfo.cpp:791: bool getEdgeValueLocal(llvm::Value *, llvm::BasicBlock *, llvm::BasicBlock *, <anonymous>::LVILatticeVal &): Assertion `BI->getSuccessor(!isTrueDest) == BBTo && "BBTo isn't a successor of BBFrom"' failed.
+

@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r198649-install/bin/g++ -o /dev/null -g --param=ssp-buffer-size=4 -Wformat -O3 -Wno-inline -fPIC -fno-strict-aliasing -ftemplate-depth-1024 -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

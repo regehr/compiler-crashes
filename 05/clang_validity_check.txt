@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r238138-install/bin/clang++ -o /dev/null -ftemplate-depth-128 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O3 -finline-functions -Wno-inline -Wall -g -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

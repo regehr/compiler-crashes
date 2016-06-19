@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r223388-install/bin/clang -o /dev/null -g -Wformat --param -fPIC  -c small.c >/dev/null 2>&1

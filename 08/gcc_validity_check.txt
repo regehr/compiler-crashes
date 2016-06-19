@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r177261-install/bin/g++ -o /dev/null -fstack-protector --param=ssp-buffer-size=4 -fPIC  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,1 @@
+Assertion `NTTP->getDepth() == 0 && "Cannot deduce non-type template argument with depth > 0"' failed.

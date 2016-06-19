@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r126697-install/bin/g++ -pthread -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fno-rtti -fno-exceptions -Wcast-align -fvisibility-inlines-hidden --std=c++0x -fPIC -O3 -mtune=native small.cpp 

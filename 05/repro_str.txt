@@ -1,0 +1,1 @@
+Assertion `!ActiveTemplateInstantiations.empty() && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.

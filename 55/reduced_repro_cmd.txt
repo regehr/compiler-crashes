@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r218633-install/bin/gcc -O2 small.c 

@@ -1,0 +1,2 @@
+scenegraph/coreapi/qsgshaderrewriter.cpp:203:19: internal compiler error: tree check: expected call_expr, have target_expr in maybe_add_lambda_conv_op, at cp/semantics.c:5965
+

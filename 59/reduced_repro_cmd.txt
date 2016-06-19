@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r99225-install/bin/g++ -O1 small.cpp 

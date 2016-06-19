@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:5730: void llvm::SelectionDAG::ReplaceAllUsesWith(llvm::SDValue, llvm::SDValue): Assertion `From != To.getNode() && "Cannot replace uses of with self"' failed.
+

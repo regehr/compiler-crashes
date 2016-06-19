@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r191236-install/bin/g++ -o /dev/null -g --param=ssp-buffer-size=4 -Wno-c++0x-compat -fvisibility=hidden -fvisibility-inlines-hidden -std=c++0x -Wall -Wno-c++0x-compat  -c small.cpp >/dev/null 2>&1

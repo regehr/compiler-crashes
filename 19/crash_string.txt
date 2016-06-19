@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaDeclCXX.cpp:1938: bool clang::Sema::SetBaseOrMemberInitializers(clang::CXXConstructorDecl*, clang::CXXBaseOrMemberInitializer**, unsigned int, bool): Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
+

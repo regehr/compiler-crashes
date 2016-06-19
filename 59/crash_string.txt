@@ -1,0 +1,2 @@
+/home/regehr/svn/code/harvest_crashes/qtbase-opensource-src-5.2.1+dfsg/src/corelib/kernel/qmetatype.cpp:535: internal compiler error: verify_ssa failed.
+

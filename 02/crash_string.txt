@@ -1,0 +1,2 @@
+./boost/math/special_functions/sign.hpp:138:4: internal compiler error: tree check: expected tree that contains ‘decl minimal’ structure, have ‘tree_list’ in push_overloaded_decl, at cp/name-lookup.c:2160
+

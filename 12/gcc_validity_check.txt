@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r191236-install/bin/g++ -o /dev/null -g -std=c++0x -Wall -fPIC  -c small.cpp >/dev/null 2>&1

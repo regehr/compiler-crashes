@@ -1,0 +1,2 @@
+jsruntime/qv4mathobject.cpp:284:1: internal compiler error: lang_* check: failed in discriminator_for_local_entity, at cp/mangle.c:1581
+

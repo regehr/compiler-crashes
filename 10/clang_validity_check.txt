@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r140739-install/bin/clang++ -o /dev/null -O2 --param=ssp-buffer-size=4 -Wformat  -c small.cpp >/dev/null 2>&1

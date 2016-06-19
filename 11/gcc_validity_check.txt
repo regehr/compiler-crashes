@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r224091-install/bin/g++ -o /dev/null -ftemplate-depth-128 -O2 --param=ssp-buffer-size=4 -Wformat -Wall -g  -c small.cpp >/dev/null 2>&1

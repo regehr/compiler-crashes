@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r98697-install/bin/clang++ -g -O2 -m64 -Wall -Wshadow -Wcast-qual -Woverloaded-virtual -Wnon-virtual-dtor -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security small.cpp 

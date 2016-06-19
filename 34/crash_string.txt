@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaTemplateVariadic.cpp:167: bool clang::Sema::DiagnoseUnexpandedParameterPack(clang::SourceLocation, clang::TypeSourceInfo*, clang::Sema::UnexpandedParameterPackContext): Assertion `!Unexpanded.empty() && "Unable to find unexpanded parameter packs"' failed.
+

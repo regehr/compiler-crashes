@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r244333-install/bin/clang++ -o /dev/null -fstack-protector -Wformat -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wchar-subscripts -Wno-unused-parameter -Wno-switch-enum -Wno-c++0x-compat -fdata-sections -O2 -fvisibility=hidden -fvisibility-inlines-hidden -pthread -pthread -pthread -mtune=native  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r226891-install/bin/g++ -o /dev/null -O2 --param=ssp-buffer-size=4 -Wformat -finline-functions -g -pthread -mtune=native  -c small.cpp >/dev/null 2>&1

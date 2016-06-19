@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r217167-install/bin/g++ -o /dev/null -fstack-protector -Wformat -fvisibility-inlines-hidden -Wall -W -O3 -mtune=native  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r176391-install/bin/g++ -o /dev/null -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O2 -fvisibility=hidden -fvisibility-inlines-hidden -std=c++0x -Wall -W -fPIC  -c small.cpp >/dev/null 2>&1

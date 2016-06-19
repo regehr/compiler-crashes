@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r240517-install/bin/clang++ -o /dev/null -ftemplate-depth-128 -Wformat -finline-functions -Wno-inline -Wall -g  -c small.cpp >/dev/null 2>&1

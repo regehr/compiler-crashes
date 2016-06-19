@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r234783-install/bin/clang++ -o /dev/null -O2 --param=ssp-buffer-size=4 -Wformat -O2 -fvisibility=hidden -fvisibility-inlines-hidden  -c small.cpp >/dev/null 2>&1

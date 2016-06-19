@@ -1,0 +1,1 @@
+Assertion `false && "FIXME: Only type template names supported here"' failed.

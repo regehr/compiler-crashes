@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r212426-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g -Wno-inline -g -pthread -Winvalid-pch  -c small.cpp >/dev/null 2>&1

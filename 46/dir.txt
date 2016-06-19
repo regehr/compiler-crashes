@@ -1,0 +1,1 @@
+/home/regehr/svn/code/harvest_crashes/opencv-2.4.8+dfsg1/obj-x86_64-linux-gnu/modules/core

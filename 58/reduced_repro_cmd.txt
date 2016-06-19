@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r176391-install/bin/gcc -mx32 --param max-inline-insns-single=1200 small.c 

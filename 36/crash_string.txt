@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/lib/IR/Value.cpp:79: virtual llvm::Value::~Value(): Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
+

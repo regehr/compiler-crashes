@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r146315-install/bin/g++ -o /dev/null -O2 -fstack-protector -O2 -fvisibility=hidden -std=c++0x -fno-exceptions -Wall -O3  -c small.cpp >/dev/null 2>&1

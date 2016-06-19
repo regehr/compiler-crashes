@@ -1,0 +1,2 @@
+./boost/exception/exception.hpp:451:13: internal compiler error: in gen_type_die_with_usage, at dwarf2out.c:20878
+

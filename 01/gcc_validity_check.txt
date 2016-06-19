@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r182529-install/bin/g++ -o /dev/null -fstack-protector --param=ssp-buffer-size=4 -O3 -finline-functions -fno-strict-aliasing -ftemplate-depth-1024  -c small.cpp >/dev/null 2>&1

@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r115539-install/bin/gcc -o /dev/null -g --param=ssp-buffer-size=4 -Wformat -Werror=format-security -mtune=native  -c small.c >/dev/null 2>&1

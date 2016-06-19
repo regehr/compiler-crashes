@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r201961-install/bin/clang++ -o /dev/null -g --param=ssp-buffer-size=4 -Wall -pthread  -c small.cpp >/dev/null 2>&1

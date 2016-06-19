@@ -1,0 +1,2 @@
+/usr/include/qt5/QtCore/qglobalstatic.h:122:1: internal compiler error: in retrieve_specialization, at cp/pt.c:1060
+

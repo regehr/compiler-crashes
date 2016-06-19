@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r168141-install/bin/g++ -std=c++0x small.cpp 

@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/Sema.h:3530: void clang::Sema::LocalInstantiationScope::InstantiatedLocal(const clang::Decl*, clang::Decl*): Assertion `(!Stored || Stored == Inst) && "Already instantiated this local"' failed.
+

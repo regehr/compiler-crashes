@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CGExprScalar.cpp:151: llvm::Value*<unnamed>::ScalarExprEmitter::VisitDeclRefExpr(clang::DeclRefExpr*): Assertion `!Result.HasSideEffects && "Constant declref with side-effect?!"' failed.
+

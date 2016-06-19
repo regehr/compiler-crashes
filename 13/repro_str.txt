@@ -1,0 +1,1 @@
+Assertion `Layout.getVBaseClassOffset(PrimaryBase) == 0 && "Primary vbase should have a zero offset!"' failed.

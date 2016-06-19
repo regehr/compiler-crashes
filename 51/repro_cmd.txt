@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r164319-install/bin/gcc -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -pthread -fPIC -O3 -mtune=native small.c 

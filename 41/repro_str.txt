@@ -1,0 +1,1 @@
+Assertion `Arg.getKind() == TemplateArgument::Type && "Template argument kind mismatch"' failed.

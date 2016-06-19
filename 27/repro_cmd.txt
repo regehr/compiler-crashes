@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r133983-install/bin/clang++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O2 -fvisibility=hidden -fvisibility-inlines-hidden -std=c++0x -fno-exceptions -Wall -W -fPIC small.cpp 

@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/Sema.h:3465: clang::Decl* clang::Sema::LocalInstantiationScope::getInstantiationOf(const clang::Decl*): Assertion `(Result || D->isInvalidDecl()) && "declaration was not instantiated in this scope!"' failed.
+

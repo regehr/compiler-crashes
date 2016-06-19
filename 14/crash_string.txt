@@ -1,0 +1,2 @@
+./boost/move/core.hpp:200:56: internal compiler error: canonical types differ for identical types boost::rv<boost::log::v2_mt_posix::attribute_set>* and boost::rv<boost::log::v2_mt_posix::attribute_set>*
+

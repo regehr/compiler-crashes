@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaExpr.cpp:1644: clang::ASTOwningResult<&clang::ActionBase::DeleteExpr> clang::Sema::BuildDeclarationNameExpr(const clang::CXXScopeSpec&, clang::SourceLocation, clang::NamedDecl*): Assertion `!isa<FunctionTemplateDecl>(D) && "Cannot refer unambiguously to a function template"' failed.
+

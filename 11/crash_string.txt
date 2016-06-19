@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/CodeGen/CodeGenTypes.cpp:137: void clang::CodeGen::CodeGenTypes::UpdateCompletedType(const clang::TagDecl*): Assertion `isa<llvm::OpaqueType>(OpaqueHolder.get()) && "Updating compilation of an already non-opaque type?"' failed.
+

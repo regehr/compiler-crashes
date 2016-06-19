@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r207148-install/bin/clang -pthread -pthread -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O3 -mtune=native small.c 

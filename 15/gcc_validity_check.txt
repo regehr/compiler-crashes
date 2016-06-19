@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r221995-install/bin/g++ -o /dev/null -g -O0 -Wall -Wshadow -Wcast-qual -Woverloaded-virtual -Wnon-virtual-dtor -g --param=ssp-buffer-size=4 -Werror=format-security  -c small.cpp >/dev/null 2>&1

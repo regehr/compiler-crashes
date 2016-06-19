@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r185338-install/bin/clang++ -o /dev/null -g -fstack-protector -Werror=format-security -finline-functions -Wno-inline -Wall -g -mtune=native  -c small.cpp >/dev/null 2>&1

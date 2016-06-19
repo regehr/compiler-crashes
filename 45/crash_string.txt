@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/include/llvm/CodeGen/MachineOperand.h:265: unsigned int llvm::MachineOperand::getReg() const: Assertion `isReg() && "This is not a register operand!"' failed.
+

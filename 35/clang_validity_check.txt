@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/llvm-r188798-install/bin/clang -o /dev/null -g -O2 -Wformat -Werror=format-security --param max-inline-insns-single=1200 -fPIC  -c small.c >/dev/null 2>&1

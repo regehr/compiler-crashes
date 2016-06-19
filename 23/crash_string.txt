@@ -1,0 +1,2 @@
+clang: /home/regehr/z/compiler-source/llvm/tools/clang/lib/Sema/SemaCXXCast.cpp:609: TryCastResult TryStaticCast(clang::Sema&, clang::Expr*&, clang::QualType, bool, const clang::SourceRange&, unsigned int&, clang::CastKind&, clang::CXXCastPath&): Assertion `SrcType->getAs<EnumType>()->getDecl()->isScoped()' failed.
+

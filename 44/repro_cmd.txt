@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r224523-install/bin/g++ -ftemplate-depth-128 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -O3 -finline-functions -Wno-inline -Wall -g -pthread -fno-strict-aliasing -ftemplate-depth-1024 -O3 -mtune=native small.cpp 

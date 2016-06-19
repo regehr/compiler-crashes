@@ -1,0 +1,1 @@
+/home/regehr/z/compiler-install/gcc-r196612-install/bin/gcc -o /dev/null -mx32 -g -fstack-protector -fPIC  -c small.c >/dev/null 2>&1
