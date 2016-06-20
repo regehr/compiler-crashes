@@ -2,17 +2,15 @@
 
 # compiler-crashes
 
---------------------------------------------------------------------
-
-This repository contains some 8 C files and 52 C++ files that make GCC
+This repository contains 8 C files and 52 C++ files that make GCC
 and Clang crash. Its purpose is to support research into software
 engineering tools such as test-case reducers.
 
 These crashes were obtained on an x86-64 machine running Ubuntu 14.04
-by building randomly selected packages using older compiler
-versions. To reproduce the crashing behaviors, you will need to either
-build these old compilers or else download a collection of binary
-compilers that we have prepared:
+by building randomly selected packages using randomly selected older
+compiler versions. To reproduce the crashing behaviors, you will need
+to either build these old compilers or else download a collection of
+binary compilers that we have prepared:
 
   http://embed.cs.utah.edu/compiler-install.tar.bz2
 
@@ -34,20 +32,22 @@ We picked 60 compiler crashes out of a much larger number of crashes
 - each crash can be reproduced by compiling a single C or C++ file
 
 Each of the 60 directories contains the following items:
-- dir.txt : the directory where the crash occurred
-- cmd.txt : original compiler invocation triggering the crash
-- repro_cmd.txt : also makes the crash happen
+- dir.txt : the original directory where the crash occurred (contains
+  the name of the package where the source file came from)
+- cmd.txt : the original compiler invocation triggering the crash
+- repro_cmd.txt : command used to reproduce the crash
 - reduced_repro_cmd.txt : makes the crash happen using as few
   arguments to the compiler as possible
 - crash_string.txt : error message identifying this crash
-- repro_str.txt : error message stripped down so we can look for it
+- repro_str.txt : error message stripped down so that it can be looked for
+  by an interestingness test
 - test1.pl : a C-Reduce interestingness test for this crash
 - small.c or small.cpp : preprocessed C or C++ file triggering the crash
 - (varies) : the unpreprocessed C or C++ source file
 
-The interestingness test assumes that an environment variable
+The interestingness tests assume that an environment variable
 TEST_COMPILER_HOME points to the directory containing the old compiler
-verisons. It must be set or the test will not work. Additionally, there
+verisons. It must be set or the tests will not work. Additionally, there
 are four optional environment variables:
 - TEST_TIME_LIMIT : if set, kill the compiler if it runs longer than
   the specified number of seconds
@@ -61,8 +61,9 @@ are four optional environment variables:
 Everything should work if the resource limit values are respectively
 set to 60 (1 minute), 100000000 (100 MB), and 6000000000 (6 GB). Be
 careful with these since it's a pain to debug compilers that get
-killed by resource limits. Really, you probably do not need to bother
-with these limits at all.
+killed by resource limits. You may well be able to get away with not
+setting these limits at all, it depends on how much you trust a buggy
+compiler to not misbehave.
 
 Run the "test_test1.pl" program to make sure all interestingness tests
 are working.
