@@ -27,9 +27,10 @@ notes at the bottom of this file. These notes are probably incomplete.
 
 We picked 60 compiler crashes out of a much larger number of crashes
 (about 3,500) using the following criteria:
-- the crashes are distinct from each other in terms of error messages
-  produced
-- each crash can be reproduced by compiling a single C or C++ file
+- the crashes are distinct from each other (with string edit distance
+  of at least 5) in terms of error messages produced
+- each crash can be reproduced deterministically by compiling a single
+  C or C++ file
 
 Each of the 60 directories contains the following items:
 - dir.txt : the original directory where the crash occurred (contains
