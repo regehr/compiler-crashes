@@ -51,22 +51,27 @@ Each of the 60 directories contains the following items:
 The interestingness test assumes that an environment variable
 TEST_COMPILER_HOME points to the directory containing the old compiler
 verisons. It must be set or the test will not work. Additionally, there
-are three optional environment variables:
+are four optional environment variables:
 - TEST_TIME_LIMIT : if set, kill the compiler if it runs longer than
   the specified number of seconds
 - TEST_FILE_LIMIT : if set, kill the compiler if it emits more than
   the specified number of bytes of output
 - TEST_RAM_LIMIT : if set, kill the compiler if it uses more than the
   specified number of bytes of RAM
+- TEST_DEBUG : if set, emit some debugging output that may help in
+  diagnosing interestingness tests that are not behaving properly
 
-Everything should work if these values are respectively set to 60 (1
-minute), 1000000 (1 MB), and 6000000000 (6 GB).
+Everything should work if the resource limit values are respectively
+set to 60 (1 minute), 100000000 (100 MB), and 6000000000 (6 GB). Be
+careful with these since it's a pain to debug compilers that get
+killed by resource limits. Really, you probably do not need to bother
+with these limits at all.
 
-Turn off ASLR before trying to reproduce crashes.
+You should turn off ASLR before trying to reproduce crashes.
 
 --------------------------------------------------------------------
 
-to get old GCC versions to build:
+To get old GCC versions to build:
 
 changed line 62 of /usr/include/x86_64-linux-gnu/bits/siginfo.h to:
 
@@ -76,7 +81,9 @@ added:
 
   --disable-multilib --disable-bootstrap
 
-to configure options
+to GCC configure options
+
+also:
 
 export CXX='g++-4.4 -w -fpermissive'
 export CC='gcc-4.4 -w'
@@ -85,7 +92,7 @@ export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
 
 --------------------------------------------------------------------
 
-to get old LLVM versions to build:
+To get old LLVM versions to build:
 
 export CXX='g++-4.4 -w -fpermissive'
 export CC='gcc-4.4 -w'
@@ -95,6 +102,6 @@ add these to cassert header file:
   #include <stddef.h>
   #include <unistd.h>
 
-starting around revision 160000, swich from GCC 4.4 to 4.8
+starting around revision 160000, swich from using GCC 4.4 to 4.8
 
 --------------------------------------------------------------------
