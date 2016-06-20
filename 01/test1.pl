@@ -13,7 +13,11 @@ my $TEST_RAM_LIMIT = $ENV{"TEST_RAM_LIMIT"};
 setrlimit(RLIMIT_AS, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 setrlimit(RLIMIT_VMEM, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 system "$TEST_COMPILER_HOME/gcc-r182529-install/bin/g++ -o /dev/null -fstack-protector --param=ssp-buffer-size=4 -O3 -finline-functions -fno-strict-aliasing -ftemplate-depth-1024  -c small.cpp >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 my $str = <<EOF;
 internal compiler error: canonical types differ for identical types const boost::rv<boost::log::v2s_mt_posix::aux::light_function<void ()()> > and const boost::rv<boost::log::v2s_mt_posix::aux::light_function<void ()()> >
 EOF
@@ -23,5 +27,8 @@ my $err;
 my $cmd = "$TEST_COMPILER_HOME/gcc-r128893-install/bin/g++ small.cpp ";
 IPC::Run3::run3($cmd, \undef, \$err, \$err);
 my $idx = index($err,$str);
-exit (-1) if ($idx == -1);
+if ($idx < 0){
+  print "crash not found, output was '$err'\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
 exit (0);

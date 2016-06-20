@@ -13,9 +13,17 @@ my $TEST_RAM_LIMIT = $ENV{"TEST_RAM_LIMIT"};
 setrlimit(RLIMIT_AS, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 setrlimit(RLIMIT_VMEM, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 system "g++ -o /dev/null -mx32 --param=ssp-buffer-size=4 -Wformat  -c small.cpp >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 system "$TEST_COMPILER_HOME/llvm-r232274-install/bin/clang++ -o /dev/null -mx32 --param=ssp-buffer-size=4 -Werror=format-security  -c small.cpp >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 my $str = <<EOF;
 Assertion `isReg() && "This is not a register operand!"' failed.
 EOF
@@ -25,5 +33,8 @@ my $err;
 my $cmd = "$TEST_COMPILER_HOME/llvm-r218173-install/bin/clang++ -mx32 -O1 small.cpp ";
 IPC::Run3::run3($cmd, \undef, \$err, \$err);
 my $idx = index($err,$str);
-exit (-1) if ($idx == -1);
+if ($idx < 0){
+  print "crash not found, output was '$err'\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
 exit (0);

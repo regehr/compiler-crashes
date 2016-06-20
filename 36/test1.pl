@@ -13,9 +13,17 @@ my $TEST_RAM_LIMIT = $ENV{"TEST_RAM_LIMIT"};
 setrlimit(RLIMIT_AS, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 setrlimit(RLIMIT_VMEM, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 system "$TEST_COMPILER_HOME/gcc-r221995-install/bin/gcc -o /dev/null -pthread -pthread -g -O2 -O3  -c small.c >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 system "$TEST_COMPILER_HOME/llvm-r114139-install/bin/clang -o /dev/null -pthread -O2 -fstack-protector -Werror=format-security -O3 -mtune=native  -c small.c >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 my $str = <<EOF;
 Assertion `use_empty() && "Uses remain when a value is destroyed!"' failed.
 EOF
@@ -25,5 +33,8 @@ my $err;
 my $cmd = "$TEST_COMPILER_HOME/llvm-r207148-install/bin/clang -g -O2 small.c ";
 IPC::Run3::run3($cmd, \undef, \$err, \$err);
 my $idx = index($err,$str);
-exit (-1) if ($idx == -1);
+if ($idx < 0){
+  print "crash not found, output was '$err'\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
 exit (0);

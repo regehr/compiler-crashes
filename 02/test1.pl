@@ -13,7 +13,11 @@ my $TEST_RAM_LIMIT = $ENV{"TEST_RAM_LIMIT"};
 setrlimit(RLIMIT_AS, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 setrlimit(RLIMIT_VMEM, $TEST_RAM_LIMIT, $TEST_RAM_LIMIT) if defined $TEST_RAM_LIMIT;
 system "$TEST_COMPILER_HOME/gcc-r212426-install/bin/g++ -o /dev/null -ftemplate-depth-128 -g -Wno-inline -g -pthread -Winvalid-pch  -c small.cpp >/dev/null 2>&1";
-exit (-1) unless ($? == 0);
+if ($? != 0) {
+  print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
+print "validity check failed\n" if defined $ENV{"TEST_DEBUG"};
 my $str = <<EOF;
 internal compiler error: tree check: expected tree that contains ‘decl minimal’ structure, have ‘tree_list’ in push_overloaded_decl, at cp/name-lookup.c:2160
 EOF
@@ -23,5 +27,8 @@ my $err;
 my $cmd = "$TEST_COMPILER_HOME/gcc-r162439-install/bin/g++ small.cpp ";
 IPC::Run3::run3($cmd, \undef, \$err, \$err);
 my $idx = index($err,$str);
-exit (-1) if ($idx == -1);
+if ($idx < 0){
+  print "crash not found, output was '$err'\n" if defined $ENV{"TEST_DEBUG"};
+  exit(-1);
+}
 exit (0);
