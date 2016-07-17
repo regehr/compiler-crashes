@@ -12,7 +12,7 @@ compiler versions. To reproduce the crashing behaviors, you will need
 to either build these old compilers or else download a collection of
 binary compilers that we have prepared:
 
-  http://embed.cs.utah.edu/compiler-install.tar.bz2
+  http://john.regehr.org/compiler-install.tar.bz2
 
 These binaries are unlikely to work on an OS other than Ubuntu 14.04
 for x86-64. Since both LLVM and GCC use Subversion, compilers are
